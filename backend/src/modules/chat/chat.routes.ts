@@ -12,8 +12,8 @@ const chatRoutes = Router();
 const jwtService = new JwtService({
   accessSecret: env.JWT_ACCESS_SECRET!,
   refreshSecret: env.JWT_REFRESH_SECRET!,
-  accessExpiresIn: "7d",
-  refreshExpiresIn: "30d",
+  accessExpiresIn: "1d",
+  refreshExpiresIn: "7d",
 });
 
 const chatRepository = new ChatRepository();
